@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering Communities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Apply Roboto font to the whole body */
+        }
+        .mission-list {
+    font-size: 1.1rem; /* Increase font size for better readability */
+}
+
+.mission-list li {
+    position: relative; /* Allows for positioning of pseudo-elements if needed */
+    padding-left: 30px; /* Add space for icons */
+}
+
+.mission-list li i {
+    font-size: 1.2rem; /* Adjust icon size */
+    position: absolute;
+    left: 0; /* Positioning the icon to the left */
+    top: 0; /* Align icon to the top of the list item */
+}
+
+.text-success {
+    color: #28a745; /* Bootstrap's success color for check icons */
+}
+
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-light py-3">
+        <div class="container">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"style="background-color: transparent;">
+                <!-- Logo -->
+                <a href="#" class="navbar-brand">
+                    <img src="assets/logo.png" alt="Dorep Logo" class="img-fluid" style="max-height: 50px;">
+                </a>
+    
+                <!-- Toggle button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars"></i></span>
+                </button>
+    
+                <!-- Navbar links (collapsible on small screens) -->
+                <div class="collapse navbar-collapse justify-content-end"  id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link" style="color: black;">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link" style="color: black;">About Us</a></li>
+                        <li class="nav-item"><a href="#activities" class="nav-link" style="color: black;">Activities</a></li>
+                        <li class="nav-item"><a href="#ourTeam" class="nav-link" style="color: black;">Our Team</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <!-- Add FontAwesome for the hamburger icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center" style="min-height: 110vh; position: relative; overflow: hidden; border-radius: 15px;">
+        <!-- Blurred Background -->
+        <div id="backgroundImage" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('assets/DSC_0503.JPG'); background-size: cover; background-position: center; filter: blur(8px); transition: background-image 1s ease-in-out; z-index: -1;"></div>
+        
+        <!-- Foreground Content (unblurred) -->
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="row">
+                
+                
+               
+    
+                <!-- Text Column -->
+                <div class="col-md-6">
+                    <div style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 8px;">
+                        <h1 class="display-5" style="color: #32cd32; font-weight: bold;">Empowering Communities <br>Through Hope and Compassion</h1>
+                        <p style="color: white;">At Desert Oasis Residents Empowerment Programme (DOREP), we believe that every small action can spark significant change. Join us in our mission to uplift and inspire our community through collective efforts.</p>
+                        <a href="#" class="btn btn-light me-2">Learn more</a>
+                    </div>
+                </div>
+                <!-- Slideshow Column -->
+                <div class="col-md-6">
+                    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
+                        <div class="carousel-inner" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                            <!-- First Slide -->
+                            <div class="carousel-item active" data-bg-image="assets/DSC_0503.JPG">
+                                <img src="assets/DSC_0503.JPG" class="img-fluid" alt="Desert Oasis 1">
+                            </div>
+                            <!-- Second Slide -->
+                            <div class="carousel-item" data-bg-image="assets/DSC_0501.JPG">
+                                <img src="assets/DSC_0501.JPG" class="img-fluid" alt="Desert Oasis 2">
+                            </div>
+                            <!-- Third Slide -->
+                            <div class="carousel-item" data-bg-image="assets/DSC_0495.JPG">
+                                <img src="assets/DSC_0495.JPG" class="img-fluid" alt="Desert Oasis 3">
+                            </div>
+                        </div>
+                
+                        <!-- Carousel Indicators -->
+                        <ol class="carousel-indicators" style="bottom: -60px;">
+                            <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
+                        </ol>
+                
+                        <!-- Carousel Controls -->
+                        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev" style="width: 5%; left: -50px;">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" style="font-size: 2rem; background-color: darkblue; padding: 15px; border-radius: 50%;"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next" style="width: 5%; right: -50px;">
+                            <span class="carousel-control-next-icon" aria-hidden="true" style="font-size: 2rem; background-color: darkblue; padding: 15px; border-radius: 50%;"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Custom CSS -->
+                <style>
+                    #heroCarousel .carousel-indicators li {
+                        width: 95px;
+                        height: 12px;
+                        background-color: rgba(200, 200, 200, 0.8); /* Default color */
+                        border-radius: 10px;
+                    }
+                    
+                    #heroCarousel .carousel-indicators .active {
+                        background-color: #32cd32; /* Active indicator color */
+                    }
+                
+                    #heroCarousel .carousel-indicators li::before {
+                        content: none !important;
+                    }
+                
+                    #heroCarousel .carousel-indicators li::after {
+                        content: none !important; /* Prevent numbers */
+                    }
+                </style>
+                
+                <!-- Add your custom JS -->
+                <script>
+                    let hasLoopedOnce = false; // Track whether the carousel has completed one full loop
+                
+                    // Listen to when the carousel slides
+                    document.getElementById('heroCarousel').addEventListener('slid.bs.carousel', function (event) {
+                        let activeIndex = event.to;
+                        let totalSlides = document.querySelectorAll('#heroCarousel .carousel-item').length;
+                
+                        // When the carousel returns to the first slide, after a full loop
+                        if (activeIndex === 0 && hasLoopedOnce) {
+                            // Stop the carousel from sliding automatically
+                            document.getElementById('heroCarousel').carousel('pause');
+                        }
+                
+                        // Mark that we have completed one full cycle
+                        if (activeIndex === totalSlides - 1) {
+                            hasLoopedOnce = true;
+                        }
+                    });
+                </script>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+ <!-- Intro Section -->
+ <section class="py-5" id="about" >
+    <div class="container text-center">
+        <h2 style="color: #32cd32; font-weight: bolder; padding-top: 2rem;">Who Are We?</h2>
+        <p class="lead">At DOREP, we believe that a little support can change the world. Since our founding in 2007, we have focused on making a meaningful impact through fresh ideas and passion in our various activities. Our mission is to empower the destitute by launching community projects that help our members utilize available resources for poverty eradication..</p>
+    </div>
+</section>
+<section class="mission-section py-5">
+    <h2 class="text-center mb-5" style="color: #32cd32; font-weight: bold;">Our Mission</h2>
+
+    <div class="container position-relative">
+
+        <!-- Vertical line in the middle -->
+        <div class="vertical-line"></div>
+
+        <!-- Item 1 (Text on Right, Icon on Left) -->
+        <div class="row align-items-center mb-4">
+            <div class="col-md-1 text-center">
+                <div class="icon-avatar">
+                    <i class="bi bi-check-circle-fill text-white">1.</i>
+                </div>
+            </div>
+            <div class="col-md-5 text-md-end">
+                <div class="mission-item p-3" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
+                    Promoting modern agricultural technologies to rural farmers to enhance food security.
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 2 (Text on Left, Icon on Right) -->
+        <div class="row align-items-center mb-4 justify-content-end">
+            <div class="col-md-5 text-md-start">
+                <div class="mission-item p-3" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
+                    Promote social and economic knowledge in order to uplift the lives of members.
+                </div>
+            </div>
+            <div class="col-md-1 text-center">
+                <div class="icon-avatar">
+                    <i class="bi bi-check-circle-fill text-white">2.</i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 3 (Text on Right, Icon on Left) -->
+        <div class="row align-items-center mb-4">
+            <div class="col-md-1 text-center">
+                <div class="icon-avatar">
+                    <i class="bi bi-check-circle-fill text-white">3.</i>
+                </div>
+            </div>
+            <div class="col-md-5 text-md-end">
+                <div class="mission-item p-3" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
+                    Supporting destitute families, aiding the physically challenged, and caring for the aged and terminally ill.
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 4 (Text on Left, Icon on Right) -->
+        <div class="row align-items-center mb-4 justify-content-end">
+            <div class="col-md-5 text-md-start">
+                <div class="mission-item p-3" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
+                    Establishing an investment and credit fund to benefit members, youth groups, and organizations in both rural and urban areas.
+                </div>
+            </div>
+            <div class="col-md-1 text-center">
+                <div class="icon-avatar">
+                    <i class="bi bi-check-circle-fill text-white">4.</i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 5 (Text on Right, Icon on Left) -->
+        <div class="row align-items-center mb-4">
+            <div class="col-md-1 text-center">
+                <div class="icon-avatar">
+                    <i class="bi bi-check-circle-fill text-white">5.</i>
+                </div>
+            </div>
+            <div class="col-md-5 text-md-end">
+                <div class="mission-item p-3" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
+                    Promoting activities aimed at eradicating HIV/AIDS and providing care and support for those affected by the disease.
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 6 (Text on Left, Icon on Right) -->
+        <div class="row align-items-center mb-4 justify-content-end">
+            <div class="col-md-5 text-md-start">
+                <div class="mission-item p-3" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
+                    Mending ribbons in broken marriages due to overdrinking, drug abuse, and child negligence.
+                </div>
+            </div>
+            <div class="col-md-1 text-center">
+                <div class="icon-avatar">
+                    <i class="bi bi-check-circle-fill text-white">6.</i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 7 (Text on Right, Icon on Left) -->
+        <div class="row align-items-center mb-4">
+            <div class="col-md-1 text-center">
+                <div class="icon-avatar">
+                    <i class="bi bi-check-circle-fill text-white">7.</i>
+                </div>
+            </div>
+            <div class="col-md-5 text-md-end">
+                <div class="mission-item p-3" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
+                    Teach faith and religion through Bible study.
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 8 (Text on Left, Icon on Right) -->
+        <div class="row align-items-center mb-4 justify-content-end">
+            <div class="col-md-5 text-md-start">
+                <div class="mission-item p-3" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
+                    Eliminate jiggers in the society.
+                </div>
+            </div>
+            <div class="col-md-1 text-center">
+                <div class="icon-avatar">
+                    <i class="bi bi-check-circle-fill text-white">8.</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .mission-section {
+        position: relative;
+    }
+
+    /* Vertical line in the center */
+    .vertical-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 4px;
+        background-color: #32cd32;
+        z-index: 0;
+    }
+
+/* Hide vertical line on small screens */
+@media (max-width: 768px) {
+    .vertical-line {
+        display: none; /* Hide the vertical line */
+    }
+
+    
+    .icon-avatar {
+        display: none !important; /* Hide avatars */
+    }
+
+    /* Align text and icons vertically */
+    .row {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .col-md-5 {
+        text-align: center; /* Center text on small screens */
+        margin-bottom: 1rem; /* Add spacing between items */
+    }
+}
+
+    /* Icon avatar */
+    .icon-avatar {
+        width: 50px;
+        height: 50px;
+        background-color: #32cd32;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        font-size: 24px;
+    }
+
+    /* Mission item card style */
+    .mission-item {
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        color: #333;
+    }
+</style>
+
+
+<!-- Transforming Lives Section with Image on the Left -->
+<section class="transforming-lives-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center" style="border-radius: 15px;">
+                <img src="assets/DSC_0528.JPG" alt="Community Empowerment" class="img-fluid" style="border-top-right-radius: 25px;border-bottom-right-radius: 25px;  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: #32cd32; font-weight: bold;">Dorep at a glance</h2>
+                <p>DOREP is a Non-Governmental Organization that has been established to assist people in alleviating poverty through empowerment and capacity building. We give start-up capital to people who approach us in groups for the purposes of establishing projects. Some of the projects that our members are involved in include:</p>
+                <div class="row">
+                    <div class="col-6 mb-4 text-center">
+                        <i class="fas fa-kiwi-bird" style="font-size: 2rem; color: #32cd32;"></i>
+                        <p>Dairy and poultry farming</p>
+                    </div>
+                    <div class="col-6 mb-4 text-center">
+                        <i class="fas fa-paw" style="font-size: 2rem; color: #32cd32;"></i>
+                        <p>Rabbit and bee keeping</p>
+                    </div>
+                    <div class="col-6 mb-4 text-center">
+                        <i class="fas fa-seedling" style="font-size: 2rem; color: #32cd32;"></i>
+                        <p>Greenhouse farming</p>
+                    </div>
+                    <div class="col-6 mb-4 text-center">
+                        <i class="fas fa-leaf" style="font-size: 2rem; color: #32cd32;"></i>
+                        <p>Training and technical advisory</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Transforming Lives Section -->
+<section class="transforming-lives-section py-5" id="activities">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 mb-4">
+                <h2 class="text-center" style="color: #32cd32; font-weight: bold; padding-top: 2rem;">Our Activities include:</h2>
+            </div>
+            <div class="row">
+                <!-- First Activity Card -->
+                <div class="col-md-4 mb-4">
+                    <div style="background-color: #f4fdf4; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                        <i class="fas fa-chalkboard-teacher" style="color: #32cd32; font-size: 24px; margin-bottom: 10px;"></i>
+                        <h5 style="font-weight: bold; font-size: 18px;">Seminars & Workshops</h5>
+                        <p style="font-size: 14px; color: #555;">seminars, workshops, and conferences pertaining to health, education, water, religion, and agricultural needs.</p>
+                    </div>
+                </div>
+                <!-- Second Activity Card -->
+                <div class="col-md-4 mb-4">
+                    <div style="background-color: #f4fdf4; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                        <i class="fas fa-hand-holding-usd" style="color: #32cd32; font-size: 24px; margin-bottom: 10px;"></i>
+                        <h5 style="font-weight: bold; font-size: 18px;">Fundraising</h5>
+                        <p style="font-size: 14px; color: #555;">Raising, mobilizing, and disbursing funds and other resources for the promotion of the organization.</p>
+                    </div>
+                </div>
+                <!-- Third Activity Card -->
+                <div class="col-md-4 mb-4">
+                    <div style="background-color: #f4fdf4; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                        <i class="fas fa-users-cog" style="color: #32cd32; font-size: 24px; margin-bottom: 10px;"></i>
+                        <h5 style="font-weight: bold; font-size: 18px;">Employment</h5>
+                        <p style="font-size: 14px; color: #555;">Employing advisors, counselors, experts, and other staff for all or any of the objectives/mission of the organization.</p>
+                    </div>
+                </div>
+                <!-- Fourth Activity Card -->
+                <div class="col-md-4 mb-4">
+                    <div style="background-color: #f4fdf4; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                        <i class="fas fa-book-reader" style="color: #32cd32; font-size: 24px; margin-bottom: 10px;"></i>
+                        <h5 style="font-weight: bold; font-size: 18px;">Research & Training</h5>
+                        <p style="font-size: 14px; color: #555;">Collecting and sharing technical materials for research and relevant training information.</p>
+                    </div>
+                </div>
+                <!-- Fifth Activity Card -->
+                <div class="col-md-4 mb-4">
+                    <div style="background-color: #f4fdf4; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                        <i class="fas fa-campground" style="color: #32cd32; font-size: 24px; margin-bottom: 10px;"></i>
+                        <h5 style="font-weight: bold; font-size: 18px;">Campaigns</h5>
+                        <p style="font-size: 14px; color: #555;">We are involved in mobilizing and organising campaigns for jigger eradication in society.</p>
+                    </div>
+                </div>
+                <!-- Sixth Activity Card -->
+                <div class="col-md-4 mb-4">
+                    <div style="background-color: #f4fdf4; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                        <i class="fas fa-donate" style="color: #32cd32; font-size: 24px; margin-bottom: 10px;"></i>
+                        <h5 style="font-weight: bold; font-size: 18px;">Transparency</h5>
+                        <p style="font-size: 14px; color: #555;">Providing donors and receivers of assistance with an accounting of all costs and expenditures available for inspection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+   
+
+    <!-- Programs Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center" style="color: #32cd32; font-weight: bold;">Community Empowerment Activities:</h3>
+            <div class="row mt-4">
+                <div class="col-md-4 d-flex">
+                    <div class="card flex-fill">
+                        <img src="assets/DSC00376_neew.jpeg" class="card-img-top" alt="Program Image">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #32cd32; font-weight: bold;">Guidance & Counselling Department</h5>
+                            <p class="card-text">
+                                We provide wheelchairs to the physically challenged.We are also involved in the fight against drug abuse and excessive drinking through counseling and rehabilitation services.We offer support to people infected and affected by HIV & AIDS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="card flex-fill">
+                        <img src="assets/childrens_home_piccc.jpg" class="card-img-top" alt="Program Image">
+                        <div class="card-body">
+                            <h5 class="card-title"style="color: #32cd32; font-weight: bold;">Children Home Outreach</h5>
+                            <p class="card-text">We organise occasional visits to children's homes around Kenya and we get to meet new people and we are able to donate foodstuffs and clothes to the children and the organisations that run those departments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="card flex-fill">
+                        <img src="assets/green_hoses.jpg" class="card-img-top" alt="Program Image">
+                        <div class="card-body">
+                            <h5 class="card-title"style="color: #32cd32; font-weight: bold;">GreenHouse Farming</h5>
+                            <p class="card-text">DOREP constructs greenhouses to members and encourages them to construct a structure with a glass or plastic roof and walls to create an artificial climate for maximum yields. The management and supply of seedlings such as flowers, vegetables, fruits and tobacco is undertaken by the organization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Transforming Lives Section -->
+<section class="transforming-lives-section py-5"id="ourTeam">
+    
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col">
+                <h2 class="display-4" style="color: #32cd32; font-weight: bold; padding-top: 2rem;">Meet Our Team</h2>
+                <p class="lead text-muted" style="color: gray;">A talented team dedicated to achieving our goals</p>
+            </div>
+        </div>
+        <div class="row align-items-center" >
+            <div class="col-md-6">
+                <h2 class="mb-4" style="color: #32cd32;font-weight: bold;">Dr. Philip Mwaura</h2>
+                <h2 class="mb-4" style="color: grey;font-size: large;">DOREP CEO, Founder</h2>
+
+                <p>
+                    Dr Philip is a PHD holder and has a wide knowledge of agriculture and livestock related fields. His works both as an individual as well as leader of Dorep have earned him recognition in East Africa as well as in Kenya from former president Uhuru Kenyatta. He has touched the lives of many as well as educating them on money minting products through projects that have been inititiated with farmers globally. It is the vision and mission of the company to reach out to as many as 20 million kenyans by 2030
+
+
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="assets/DSC_0512.JPG" style="height: 80vh; border-top-left-radius: 200px; border-top-right-radius: 200px;" alt="Community Empowerment" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="transforming-lives-section py-5">
+    <div class="container">
+        
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="assets/DSC_0512.JPG" style="height: 80vh; border-top-left-radius: 200px; border-top-right-radius: 200px;" alt="Community Empowerment" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4" style="color: #32cd32;font-weight: bold;">Makena Prissy</h2>
+                <h2 class="mb-4" style="color: grey;font-size: large;">IT Technician</h2>
+
+                <p>
+                    As our IT expert, Prissy handles most of the organisations social media outreach platforms. She is also tasked with the resposibility of being in charge of our clients and groups as well as the company's data.
+                    She had the following message for our members " We are so grateful for the pleasure of serving you, we appreciate your trust in us and hope that we meet your expectations. We look forward to working with you and to provide excellent service now and for the years to come"
+
+                </p>
+            </div>
+           
+        </div>
+    </div>
+</section>
+<section  style="background-color: #f9f9f9; padding: 3rem 0;padding-top: 5rem;">
+    <div class="container">
+        <!-- Section Title -->
+       
+
+        <!-- Team Member Cards -->
+        <div class="row justify-content-center">
+            <!-- Team Member 1 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card team-card shadow-sm" style="border: none; border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <img src="assets/DSC_0515.JPG" class="card-img-top" alt="Team Member 1" style="border-top-left-radius: 15px; border-top-right-radius: 15px;width: 100%; height: 500px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-size: 1.25rem; font-weight: bold;">John Doe</h5>
+                        <p class="card-text text-muted" style="font-size: 0.95rem;">CEO & Founder</p>
+                        <p class="card-text" style="font-size: 0.95rem;">John has over 20 years of experience leading innovative projects worldwide.</p>
+                        <ul class="list-inline" style="padding-left: 0; margin-top: 10px;">
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-linkedin fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-twitter fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-github fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card team-card shadow-sm" style="border: none; border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <img src="assets/DSC_0516.JPG" class="card-img-top" alt="Team Member 2" style="border-top-left-radius: 15px; border-top-right-radius: 15px;width: 100%; height: 500px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-size: 1.25rem; font-weight: bold;">Jane Smith</h5>
+                        <p class="card-text text-muted" style="font-size: 0.95rem;">Chief Marketing Officer</p>
+                        <p class="card-text" style="font-size: 0.95rem;">Jane specializes in digital marketing strategies and client relations.</p>
+                        <ul class="list-inline" style="padding-left: 0; margin-top: 10px;">
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-linkedin fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-twitter fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-github fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card team-card shadow-sm" style="border: none; border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <img src="assets/DSC_0522.JPG" class="card-img-top" alt="Team Member 3" style="border-top-left-radius: 15px; border-top-right-radius: 15px;width: 100%; height: 500px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-size: 1.25rem; font-weight: bold;">Michael Brown</h5>
+                        <p class="card-text text-muted" style="font-size: 0.95rem;">Lead Developer</p>
+                        <p class="card-text" style="font-size: 0.95rem;">Michael leads our development team with a focus on cutting-edge technologies.</p>
+                        <ul class="list-inline" style="padding-left: 0; margin-top: 10px;">
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-linkedin fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-twitter fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-github fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card team-card shadow-sm" style="border: none; border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <img src="assets/DSC_0527.JPG" class="card-img-top" alt="Team Member 3" style="border-top-left-radius: 15px; border-top-right-radius: 15px;width: 100%; height: 500px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-size: 1.25rem; font-weight: bold;">Michael Brown</h5>
+                        <p class="card-text text-muted" style="font-size: 0.95rem;">Lead Developer</p>
+                        <p class="card-text" style="font-size: 0.95rem;">Michael leads our development team with a focus on cutting-edge technologies.</p>
+                        <ul class="list-inline" style="padding-left: 0; margin-top: 10px;">
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-linkedin fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-twitter fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-github fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card team-card shadow-sm" style="border: none; border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <img src="assets/DSC_0536.JPG" class="card-img-top" alt="Team Member 3" style="border-top-left-radius: 15px; border-top-right-radius: 15px;width: 100%; height: 500px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-size: 1.25rem; font-weight: bold;">Michael Brown</h5>
+                        <p class="card-text text-muted" style="font-size: 0.95rem;">Lead Developer</p>
+                        <p class="card-text" style="font-size: 0.95rem;">Michael leads our development team with a focus on cutting-edge technologies.</p>
+                        <ul class="list-inline" style="padding-left: 0; margin-top: 10px;">
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-linkedin fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-twitter fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                            <li class="list-inline-item" style="margin: 0 5px;">
+                                <a href="#" class="text-primary"><i class="fab fa-github fa-lg" style="color: #007bff; transition: color 0.3s ease;"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <a href="#" class="text-white">Logo</a>
+            <p>Follow us on:</p>
+            <div>
+                <a href="#" class="text-white me-2">Facebook</a>
+                <a href="#" class="text-white me-2">Twitter</a>
+                <a href="#" class="text-white">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var heroCarousel = document.getElementById('heroCarousel');
+            var backgroundImage = document.getElementById('backgroundImage');
+    
+            // Listen for the carousel slide event
+            heroCarousel.addEventListener('slide.bs.carousel', function (e) {
+                // Get the next image background from the data attribute
+                var nextBackgroundImage = e.relatedTarget.getAttribute('data-bg-image');
+                
+                // Set a delay of 500ms before changing the background image
+                setTimeout(function() {
+                    backgroundImage.style.backgroundImage = 'url(' + nextBackgroundImage + ')';
+                }, 500); // Adjust this delay to control how long after the slide the background changes
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM7gS1KngHpmJf6sT1cXnYjF5M4A0F5Iz5x0bK" crossorigin="anonymous">
+
+    <!-- Add Bootstrap CSS and JS in your HTML head section -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
